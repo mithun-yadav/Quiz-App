@@ -21,11 +21,11 @@ body{
     overflow: hidden;
 }
 .quiz-header{
-    padding:2rem;
+    padding:5rem;
+    
 }
 
 ul{
-    
     list-style-type: none;
     padding:0;
 }
