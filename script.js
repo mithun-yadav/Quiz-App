@@ -7,38 +7,38 @@ const quizData = [
     d: "Jwaharlal Nehru",
     correctAnswer: "b",
   },
-  // {
-  //   question: "Who is the president of India",
-  //   a: "Ramnath Kovind",
-  //   b: "Narendra Modi",
-  //   c: "Rahul Ghandi",
-  //   d: "Jwaharlal Nehru",
-  //   correctAnswer: "a",
-  // },
-  // {
-  //   question: "Who is the son of Rajiv Ghandi",
-  //   a: "Ramnath Kovind",
-  //   b: "Narendra Modi",
-  //   c: "Rahul Ghandi",
-  //   d: "Jwaharlal Nehru",
-  //   correctAnswer: "c",
-  // },
-  // {
-  //   question: "Who is the First prime minister of India",
-  //   a: "Ramnath Kovind",
-  //   b: "Narendra Modi",
-  //   c: "Rahul Ghandi",
-  //   d: "Jwaharlal Nehru",
-  //   correctAnswer: "d",
-  // },
-  // {
-  //   question: "Who is the Home minister of India",
-  //   a: "Ramnath Kovind",
-  //   b: "Narendra Modi",
-  //   c: "Amit Saha",
-  //   d: "Jwaharlal Nehru",
-  //   correctAnswer: "c",
-  // }
+  {
+    question: "Who is the president of India",
+    a: "Ramnath Kovind",
+    b: "Narendra Modi",
+    c: "Droupadi Murmu",
+    d: "Jwaharlal Nehru",
+    correctAnswer: "c",
+  },
+  {
+    question: "Who is the son of Rajiv Ghandi",
+    a: "Ramnath Kovind",
+    b: "Narendra Modi",
+    c: "Rahul Ghandi",
+    d: "Jwaharlal Nehru",
+    correctAnswer: "c",
+  },
+  {
+    question: "Who is the First prime minister of India",
+    a: "Ramnath Kovind",
+    b: "Narendra Modi",
+    c: "Rahul Ghandi",
+    d: "Jwaharlal Nehru",
+    correctAnswer: "d",
+  },
+  {
+    question: "Who is the Home minister of India",
+    a: "Ramnath Kovind",
+    b: "Narendra Modi",
+    c: "Amit Saha",
+    d: "Jwaharlal Nehru",
+    correctAnswer: "c",
+  }
 ];
 
 const answersEls=document.querySelectorAll(".answer");
@@ -84,8 +84,6 @@ function deSelectAnswer(){
 
 submitFunc.addEventListener("click", () => {
   var answers= getSelected();
-  // console.log(answers);
-  // console.log(quizData[currentQuiz].correctAnswer)
   if(answers){
     if(answers===quizData[currentQuiz].correctAnswer){
       score++;
