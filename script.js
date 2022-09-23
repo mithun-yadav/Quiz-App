@@ -7,38 +7,38 @@ const quizData = [
     d: "Jwaharlal Nehru",
     correctAnswer: "b",
   },
-  {
-    question: "Who is the president of India",
-    a: "Ramnath Kovind",
-    b: "Narendra Modi",
-    c: "Rahul Ghandi",
-    d: "Jwaharlal Nehru",
-    correctAnswer: "a",
-  },
-  {
-    question: "Who is the son of Rajiv Ghandi",
-    a: "Ramnath Kovind",
-    b: "Narendra Modi",
-    c: "Rahul Ghandi",
-    d: "Jwaharlal Nehru",
-    correctAnswer: "c",
-  },
-  {
-    question: "Who is the First prime minister of India",
-    a: "Ramnath Kovind",
-    b: "Narendra Modi",
-    c: "Rahul Ghandi",
-    d: "Jwaharlal Nehru",
-    correctAnswer: "d",
-  },
-  {
-    question: "Who is the Home minister of India",
-    a: "Ramnath Kovind",
-    b: "Narendra Modi",
-    c: "Amit Saha",
-    d: "Jwaharlal Nehru",
-    correctAnswer: "c",
-  }
+  // {
+  //   question: "Who is the president of India",
+  //   a: "Ramnath Kovind",
+  //   b: "Narendra Modi",
+  //   c: "Rahul Ghandi",
+  //   d: "Jwaharlal Nehru",
+  //   correctAnswer: "a",
+  // },
+  // {
+  //   question: "Who is the son of Rajiv Ghandi",
+  //   a: "Ramnath Kovind",
+  //   b: "Narendra Modi",
+  //   c: "Rahul Ghandi",
+  //   d: "Jwaharlal Nehru",
+  //   correctAnswer: "c",
+  // },
+  // {
+  //   question: "Who is the First prime minister of India",
+  //   a: "Ramnath Kovind",
+  //   b: "Narendra Modi",
+  //   c: "Rahul Ghandi",
+  //   d: "Jwaharlal Nehru",
+  //   correctAnswer: "d",
+  // },
+  // {
+  //   question: "Who is the Home minister of India",
+  //   a: "Ramnath Kovind",
+  //   b: "Narendra Modi",
+  //   c: "Amit Saha",
+  //   d: "Jwaharlal Nehru",
+  //   correctAnswer: "c",
+  // }
 ];
 
 const answersEls=document.querySelectorAll(".answer");
@@ -94,7 +94,7 @@ submitFunc.addEventListener("click", () => {
     if(currentQuiz<quizData.length){
         submitBtn();
       }else{
-          quiz.innerHTML=`<h2 style="margin:50px 100px 50px 200px;font-size:25px;">YOUR SCORE IS: ${score}/${quizData.length}</h2>
+          quiz.innerHTML=`<h2 class="final-score" style="margin:50px 26%;font-size:25px;">YOUR SCORE IS: ${score}/${quizData.length}</h2>
           <button onClick="location.reload()">Reload</button>`;
       }
   }
