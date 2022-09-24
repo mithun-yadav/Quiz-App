@@ -92,7 +92,7 @@ submitFunc.addEventListener("click", () => {
     if(currentQuiz<quizData.length){
         submitBtn();
       }else{
-          quiz.innerHTML=`<h2 class="final-score" style="margin:50px 26%;font-size:25px;">YOUR SCORE IS: ${score}/${quizData.length}</h2>
+          quiz.innerHTML=`<h2 class="final-score" style="margin:50px 26%;font-size:25px;text-align:center;"><span style="display:block;">YOUR SCORE</span> ${score}/${quizData.length}</h2>
           <button onClick="location.reload()">Reload</button>`;
       }
   }
